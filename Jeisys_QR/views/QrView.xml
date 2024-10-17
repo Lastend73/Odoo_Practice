@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- 결과 입력창 -->
+    <record id="view_qr_view_form" model="ir.ui.view">
+        <field name="name">qr.view.body.form</field>
+        <field name="model">qr.list</field>
+        <field name='arch' type='xml'>
+            <form>
+                <style>
+                    .embed-responsive-item, .o_field_widget{
+                        width: 100%;
+                    }
+                    .embed-responsive-item {
+                        aspect-ratio: 16 / 9;
+                    }
+                    .o_readonly{
+                        width :70%;
+                        margin-right : auto;
+                        margin-left : auto; 
+                    }
+                </style>
+                <sheet>
+                    <div class="container">
+                        <div>
+                            <h1 style="width : 1000px;">
+                                <field name="Title" placeholder="제목을 입력해주세요" readonly="1"/>
+                            </h1>
+                        </div>
+                        <notebook>
+                            <page>
+                                <field name="embed_code" widget="video_preview" class="mt-1"/>
+                            </page>
+                        </notebook>
+                    </div>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+
+    <!-- serachview -->
+    <record id="view_qr_view_search" model="ir.ui.view">
+        <field name="name">qr.view.search</field>
+        <field name="model">qr.list</field>
+        <field name='arch' type='xml'>
+            <search>
+
+            </search>
+        </field>
+    </record>
+
+    <!-- 도서관 형식 -->
+    <record id="view_qr_view_kanban" model="ir.ui.view">
+        <field name="name">qr.view.kanban</field>
+        <field name="model">qr.list</field>
+        <field name="arch" type="xml">
+            <kanban create='false'>
+                <field name='Title'/>
+                <field name='id'/>
+                <field name='Naver_QR_img'/>
+                <field name='Odoo_Qr_img_binary'/>
+                <field name='Equipment_type'/>
+                <templates>
+                    <t t-name="kanban-box">
+                        <div class="oe_kanban_global_click">
+                            <div class='o_kanban_image me-2'>
+                                <img t-if="record.Odoo_Qr_img_binary.raw_value" class='o_kanban_image' t-att-src="kanban_image('qr.list','Odoo_Qr_img_binary', record.id.raw_value)"/>
+                                <img t-else="record.Naver_QR_img.raw_value" class='o_kanban_image' t-att-src="kanban_image('qr.list','Naver_QR_img', record.id.raw_value)"/>
+                            </div>
+                            <h5>
+                                <span t-esc='record.Title.raw_value'/>
+                            </h5>
+                            <span t-esc='record.Equipment_type.raw_value' style='font-weight : lighter;'/>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
+    <record id="action_qr_view" model="ir.actions.act_window">
+        <field name="name">QR View</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">qr.list</field>
+        <field name="view_mode">kanban,form</field>
+
+        <!-- 같은 모델(DB) 사용하며 다른 페이지를 만들때 사용 -->
+        <field name="view_ids" eval="[(5, 0, 0),  
+        (0, 0, {'sequence':2,'view_mode': 'kanban', 'view_id': ref('Jeisys_QR.view_qr_view_kanban')}),
+        (0, 0, {'sequence':3,'view_mode': 'form', 'view_id': ref('Jeisys_QR.view_qr_view_form')}),
+        ]"/>
+    </record>
+
+</odoo>
+

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="product_model_action" model="ir.actions.act_window">
+        <field name="name">Product Model</field>        <!-- Window action 이름 -->
+        <field name="type">ir.actions.act_window</field>        <!--동작 방식-->
+        <field name="res_model">product.model</field>        <!--Db 이름 -->
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="product_model_view_tree" model="ir.ui.view">
+        <field name="name">product.model.view.tree</field>
+        <field name="model">product.model</field>
+        <field name='arch' type='xml'>
+            <tree>
+                <field name='Product_Class'/>
+                <field name='Product_Line'/>
+                <field name='Product_Model'/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="product_model_view_form" model="ir.ui.view">
+        <field name="name">product.model.view.form</field>
+        <field name="model">product.model</field>
+        <field name='arch' type='xml'>
+            <form>
+                <sheet>
+                    <group>
+                        <field name="Product_Class"/>
+                        <field name="Product_Line"/>
+                        <field name='Product_Model'/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+</odoo>
+

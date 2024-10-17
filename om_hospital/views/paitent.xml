@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- 데이터 입력란(form) -->
+    <record id="view_hospital_patient_form" model="ir.ui.view">
+        <field name="name">hospital.patient.form</field>
+        <field name="model">hostpital.patient</field>
+        <field name='arch' type='xml'>
+            <form>
+                <sheet>
+                    <group>
+                        <field name='name'/> 
+                        <field name='is_child'/>
+                        <field name='gender'/>
+                        <field name='age'/>
+                        <field name='notes'/>
+                    </group>
+                    <group>
+                        <field name='video_url'/>
+                        <field name='embed_code' class="mt-2" widget="video_preview" style='width:700px'/>
+                    </group>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name='message_follower_ids'/>
+                    <field name='message_ids' options="{'post_refresh' : 'recipients'}"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <!-- 목차 보여주기(tree) -->
+    <record id="view_hospital_patient_tree" model="ir.ui.view">
+        <field name="name">hospital.patient.tree</field>
+        <field name="model">hostpital.patient</field>
+        <field name='arch' type='xml'>
+            <tree>
+            <field name='name'> </field>
+            <field name='age'> </field>
+            <field name='gender'> </field>
+            </tree> 
+        </field>
+    </record>
+
+    <record id="action_hospital_patient" model="ir.actions.act_window">
+        <field name="name">Patients</field> <!-- 이름 -->
+        <field name="type">ir.actions.act_window</field> <!--동작 방식-->
+        <field name="res_model">hostpital.patient</field> <!--Db 이름 -->
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id = "menu_hospital_patients" name ="Patients" parent='menu_hospital_operations' action="action_hospital_patient" sequence = "10"/>
+</odoo>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="product_example_action" model="ir.actions.act_window">
+        <field name="name">Product Example</field>        <!-- Window action 이름 -->
+        <field name="type">ir.actions.act_window</field>        <!--동작 방식-->
+        <field name="res_model">product.example</field>        <!--Db 이름 -->
+        <field name="view_mode">kanban,form</field>
+    </record>
+
+
+
+    <record id="product_example_form" model="ir.ui.view">
+        <field name="name">product.example.form</field>
+        <field name="model">product.example</field>
+        <field name='arch' type='xml'>
+            <form>
+                <sheet>
+                    <group>
+                        <field name="Product_Type"/>
+                        <field name="Product_Type_Title"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="product_example_kanban" model="ir.ui.view">
+        <field name="name">product.example.kanban</field>
+        <field name="model">product.example</field>
+        <field name="arch" type="xml">
+            <kanban default_group_by="Product_Type" quick_create="false" records_draggable='0' create='false' group_delete='0'>
+                <field name="Product_Type"/>
+                <field name="Product_Type_Title"/>
+                <templates>
+                    <t t-name="kanban-box">
+                        <style>
+                            .flex-shrink-0{
+                                flex-shrink: 1 !important;
+                            }
+
+                            .o_column_title {
+                                text-align: center;
+                            }
+                            .oe_kanban_global_click{
+                                border-radius: 30px;
+                                margin-bottom: 10px;
+                                text-align : center;
+                            }
+                            .o_kanban_header i{
+                                display: none !important;
+                            }
+                        </style>
+                        <div class="oe_kanban_global_click">
+                            <span t-esc='record.Product_Type_Title.raw_value' style='font-size: 2vh;'/>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
+
+</odoo>
+

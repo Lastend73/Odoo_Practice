@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+Jeisys_QR.access_qr_list,access_qr_list,Jeisys_QR.model_qr_list,base.group_user,1,1,1,1
+Jeisys_QR.access_qr_option,access_qr_option,Jeisys_QR.model_qr_option,base.group_user,1,1,1,1
+Jeisys_QR.access_create_qr_option,access_create_qr_option,Jeisys_QR.model_create_qr_option,base.group_user,1,1,1,1

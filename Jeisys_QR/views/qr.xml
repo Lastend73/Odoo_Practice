@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- 결과 입력창 -->
+    <record id="view_qr_list_form" model="ir.ui.view">
+        <field name="name">qr.list.body.form</field>
+        <field name="model">qr.list</field>
+        <field name='arch' type='xml'>
+            <form>
+                <style>
+                    .embed-responsive-item, .o_field_widget{
+                        width: 100%;
+                    }
+                    .embed-responsive-item {
+                        aspect-ratio: 16 / 9;
+                    }
+                    .o_readonly{
+                        width :40%;
+                        margin-right : auto;
+                        margin-left : auto; 
+                    }
+                </style>
+                <sheet>
+                    <div class="container">
+                        <div>
+                            <h1 style="width : 100%;">
+                                <field name="Title" placeholder="제목을 입력해주세요"/>
+                            </h1>
+                        </div>
+                        <group class="row">
+                            <group class="col">
+                                <field name="country" widget="radio" options="{'horizontal': true}"/>
+                                <field name="Qr_type" widget="radio" options="{'horizontal': true}"/>
+                                <field name="Equipment_type"/>
+                                <field name="Useage_id" widget="radio"  options="{'no_open':True,'no_create_edit':True,'horizontal': true}"/>
+                                <span>
+                                </span>
+                                <span>
+                                    <button name="open_qr_option" string='add' type='object' context="{'default_equipment_type':active_id}"  class="btn-primary" />
+                                </span>
+                                <field name="video_link" placeholder="비디오 링크를 입력해주세요." class="col-12"/>
+                            </group>
+                            <group class="col">
+                               <field name="Naver_Qr_Link" placeholder="링크를 입력해주세요." widget="url" attrs="{'invisible': [('Qr_type','!=', 'Naver')]}"/>
+                                <field name="Naver_QR_img" widget="image" options="{'size': [150, 150]}" attrs="{'invisible': [('Qr_type','!=', 'Naver')]}"/>
+
+                                <field name="Odoo_Qr_key" placeholder="Key를 설정해주세요." attrs="{'invisible': [('Qr_type','=', 'Naver')]  }"/>
+                                <field name="Odoo_Qr_Link"  attrs="{'invisible':[('Qr_type','=', 'Naver')]}" widget="url" force_save="1"/>
+                                <field name="Odoo_Qr_img_binary" widget="image" attrs="{'invisible': [('Qr_type','=', 'Naver')]}" style="width: 150px"/>
+                            </group>
+                        </group>
+                        <notebook>
+                            <page>
+                                <field name="embed_code" widget="video_preview" class="mt-1"/>
+                            </page>
+                        </notebook>
+                    </div>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_qr_list" model="ir.actions.act_window">
+        <field name="name">QR List</field>        <!-- Window action 이름 -->
+        <field name="type">ir.actions.act_window</field>        <!--동작 방식-->
+        <field name="res_model">qr.list</field>        <!--Db 이름 -->
+        <field name="view_mode">kanban,tree,form</field>
+    </record>
+
+    <!-- 목차 보여주기(tree) -->
+    <record id="view_qr_list_tree" model="ir.ui.view">
+        <field name="name">qr.list.tree</field>
+        <field name="model">qr.list</field>
+        <field name='arch' type='xml'>
+            <tree>
+                <field name='Title'/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- serachview -->
+    <record id="view_qr_list_search" model="ir.ui.view">
+        <field name="name">qr.list.search</field>
+        <field name="model">qr.list</field>
+        <field name='arch' type='xml'>
+            <search>
+                <searchpanel>
+                    <field name="Equipment_type" String="Equipment" enable_counters="1"/>
+                    <field name="country" String="Country" enable_counters="1"/>
+                </searchpanel>
+            </search>
+        </field>
+    </record>
+
+    <!-- 도서관 형식 -->
+    <record id="view_qr_list_kanban" model="ir.ui.view">
+        <field name="name">qr.list.kanban</field>
+        <field name="model">qr.list</field>
+        <field name="arch" type="xml">
+            <kanban>
+                <field name='Title'/>
+                <field name='id'/>
+                <field name='Naver_QR_img'/>
+                <field name='Odoo_Qr_img_binary'/>
+                <field name='Equipment_type'/>
+                <templates>
+                    <t t-name="kanban-box">
+                        <div class="oe_kanban_global_click">
+                            <div class='o_kanban_image me-2'>
+                                <img t-if="record.Odoo_Qr_img_binary.raw_value" class='o_kanban_image' t-att-src="kanban_image('qr.list','Odoo_Qr_img_binary', record.id.raw_value)"/>
+                                <img t-else="record.Naver_QR_img.raw_value" class='o_kanban_image' t-att-src="kanban_image('qr.list','Naver_QR_img', record.id.raw_value)"/>
+                            </div>
+                            <h5>
+                                <span t-esc='record.Title.raw_value'/>
+                            </h5>
+                            <span t-esc='record.Equipment_type.raw_value' style='font-weight : lighter;'/>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
+
+</odoo>
+

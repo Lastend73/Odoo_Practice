@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="product_main_action" model="ir.actions.act_window">
+        <field name="name">Product Main</field>        <!-- Window action 이름 -->
+        <field name="type">ir.actions.act_window</field>        <!--동작 방식-->
+        <field name="res_model">product.main</field>        <!--Db 이름 -->
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="product_main_view_tree" model="ir.ui.view">
+        <field name="name">product.main.view.tree</field>
+        <field name="model">product.main</field>
+        <field name='arch' type='xml'>
+            <tree>
+                <field name='Product_Class'/>
+                <field name='Product_Line'/>
+                <field name='Product_Model'/>
+                <field name='Product_Generation'/>
+                <field name='Product_Nation'/>
+                <field name='Permission_name'/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="product_main_view_form" model="ir.ui.view">
+        <field name="name">product.main.view.form</field>
+        <field name="model">product.main</field>
+        <field name='arch' type='xml'>
+            <form>
+                <sheet>
+                <header>
+                    <button name="add_product_class" string='Add Product Class' class="btn-primary"/>
+                </header>
+                    <group>
+                        <field name="Product_Class"/>
+                        <field name="Product_Line"/>
+                        <field name="Product_Model"/>
+                        <field name="Product_Generation"/>
+                        <field name="Product_Nation"/>
+                        <field name="Permission_name"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+
+    <record id="product_main_view_search" model="ir.ui.view">
+        <field name="name">product.main.search</field>
+        <field name="model">product.main</field>
+        <field name='arch' type='xml'>
+            <search>
+                <searchpanel>
+                    
+                </searchpanel>
+            </search>
+        </field>
+    </record>
+</odoo>
+
+    

@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<odoo>
+    <record id="QR_Option_change_form" model="ir.ui.view">
+        <field name="name">Create QR Option</field>
+        <field name="model">create.qr.option</field>
+        <field name="arch" type="xml">
+            <form string='Create Equpimnet option'>
+                <group>
+                    <field name="equipment_type"/>
+                </group>
+                <group>
+                    <field name="equipment_option" option="{'required':[('equipment_type','=',True)]}"/>
+                </group>
+                <footer>
+                    <button string="OK" name="Create_Equipment_option" type='object' class="btn-primary"/>
+                    <button string="Cancel" special="cancel" class="btn"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_qr_create_option" model="ir.actions.act_window">
+        <field name="name">Create QR</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">create.qr.option</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="QR_Option_change_form"/>
+        <field name="target">new</field>
+    </record>
+</odoo>

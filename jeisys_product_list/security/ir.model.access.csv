@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+jeisys_product_list.access_product_main,access_product_main,jeisys_product_list.model_product_main,base.group_user,1,1,1,1
+jeisys_product_list.access_product_example,access_product_example,jeisys_product_list.model_product_example,base.group_user,1,1,1,1
+jeisys_product_list.access_product_class,access_product_class,jeisys_product_list.model_product_class,base.group_user,1,1,1,1
+jeisys_product_list.access_product_generation,access_product_generation,jeisys_product_list.model_product_generation,base.group_user,1,1,1,1
+jeisys_product_list.access_product_line,access_product_line,jeisys_product_list.model_product_line,base.group_user,1,1,1,1
+jeisys_product_list.access_product_model,access_product_model,jeisys_product_list.model_product_model,base.group_user,1,1,1,1

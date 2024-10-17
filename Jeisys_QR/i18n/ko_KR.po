@@ -1,0 +1,296 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* Jeisys_QR
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0-20240905\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-10-07 00:09+0000\n"
+"PO-Revision-Date: 2024-10-07 00:09+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: Jeisys_QR
+#: model_terms:ir.ui.view,arch_db:Jeisys_QR.QR_Option_change_form
+msgid "Cancel"
+msgstr "취소"
+
+#. module: Jeisys_QR
+#: model:ir.model.fields,field_description:Jeisys_QR.field_qr_list__country
+msgid "Country"
+msgstr "국가"
+
+#. module: Jeisys_QR
+#: model_terms:ir.ui.view,arch_db:Jeisys_QR.QR_Option_change_form
+msgid "Create Equpimnet option"
+msgstr "장비 옵션 생성"
+
+#. module: Jeisys_QR
+#: model:ir.actions.act_window,name:Jeisys_QR.action_qr_create_option
+msgid "Create QR"
+msgstr "QR 생성"
+
+#. module: Jeisys_QR
+#: model:ir.model,name:Jeisys_QR.model_create_qr_option
+msgid "Create QR Code Option"
+msgstr ""
+
+#. module: Jeisys_QR
+#: model:ir.model.fields,field_description:Jeisys_QR.field_create_qr_option__create_uid
+#: model:ir.model.fields,field_description:Jeisys_QR.field_qr_list__create_uid
+#: model:ir.model.fields,field_description:Jeisys_QR.field_qr_option__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: Jeisys_QR
+#: model:ir.model.fields,field_description:Jeisys_QR.field_create_qr_option__create_date
+#: model:ir.model.fields,field_description:Jeisys_QR.field_qr_list__create_date
+#: model:ir.model.fields,field_description:Jeisys_QR.field_qr_option__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: Jeisys_QR
+#: model:ir.model.fields.selection,name:Jeisys_QR.selection__create_qr_option__equipment_type__density
+#: model:ir.model.fields.selection,name:Jeisys_QR.selection__qr_list__Equipment_type__density
+#: model:ir.model.fields.selection,name:Jeisys_QR.selection__qr_option__equipment_type__density
+msgid "DENSITY"
+msgstr ""
+
+#. module: Jeisys_QR
+#: model:ir.model.fields,field_description:Jeisys_QR.field_create_qr_option__display_name
+#: model:ir.model.fields,field_description:Jeisys_QR.field_qr_list__display_name
+#: model:ir.model.fields,field_description:Jeisys_QR.field_qr_option__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: Jeisys_QR
+#: model:ir.model.fields,field_description:Jeisys_QR.field_create_qr_option__equipment_option
+#: model:ir.model.fields,field_description:Jeisys_QR.field_qr_list__Useage_id
+#: model:ir.model.fields,field_description:Jeisys_QR.field_qr_option__equipment_option
+msgid "Equipment Option"
+msgstr "장비 옵션"
+
+#. module: Jeisys_QR
+#: model:ir.model.fields,field_description:Jeisys_QR.field_create_qr_option__equipment_type
+#: model:ir.model.fields,field_description:Jeisys_QR.field_qr_list__Equipment_type
+#: model:ir.model.fields,field_description:Jeisys_QR.field_qr_option__equipment_type
+msgid "Equipment Type"
+msgstr "장비 종류"
+
+#. module: Jeisys_QR
+#: model:ir.model.fields,field_description:Jeisys_QR.field_create_qr_option__id
+#: model:ir.model.fields,field_description:Jeisys_QR.field_qr_list__id
+#: model:ir.model.fields,field_description:Jeisys_QR.field_qr_option__id
+msgid "ID"
+msgstr ""
+
+#. module: Jeisys_QR
+#: model:ir.model.constraint,message:Jeisys_QR.constraint_qr_list_unique_Odoo_Qr_key
+msgid "Key must be unique"
+msgstr "키는 중복되면 안됩니다"
+
+#. module: Jeisys_QR
+#: model_terms:ir.ui.view,arch_db:Jeisys_QR.view_qr_list_form
+msgid "Key를 설정해주세요."
+msgstr ""
+
+#. module: Jeisys_QR
+#: model:ir.model.fields,field_description:Jeisys_QR.field_create_qr_option____last_update
+#: model:ir.model.fields,field_description:Jeisys_QR.field_qr_list____last_update
+#: model:ir.model.fields,field_description:Jeisys_QR.field_qr_option____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: Jeisys_QR
+#: model:ir.model.fields,field_description:Jeisys_QR.field_create_qr_option__write_uid
+#: model:ir.model.fields,field_description:Jeisys_QR.field_qr_list__write_uid
+#: model:ir.model.fields,field_description:Jeisys_QR.field_qr_option__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: Jeisys_QR
+#: model:ir.model.fields,field_description:Jeisys_QR.field_create_qr_option__write_date
+#: model:ir.model.fields,field_description:Jeisys_QR.field_qr_list__write_date
+#: model:ir.model.fields,field_description:Jeisys_QR.field_qr_option__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: Jeisys_QR
+#: model:ir.model.fields.selection,name:Jeisys_QR.selection__create_qr_option__equipment_type__linearz
+#: model:ir.model.fields.selection,name:Jeisys_QR.selection__qr_list__Equipment_type__linearz
+#: model:ir.model.fields.selection,name:Jeisys_QR.selection__qr_option__equipment_type__linearz
+msgid "LinearZ"
+msgstr ""
+
+#. module: Jeisys_QR
+#: model:ir.ui.menu,name:Jeisys_QR.menu_qrcode_List
+msgid "List"
+msgstr "영상 관리"
+
+#. module: Jeisys_QR
+#: model:ir.model.fields.selection,name:Jeisys_QR.selection__qr_list__Qr_type__naver
+msgid "Naver"
+msgstr ""
+
+#. module: Jeisys_QR
+#: model:ir.model.fields,field_description:Jeisys_QR.field_qr_list__Naver_QR_img
+msgid "Naver QR Img"
+msgstr "네이버 QR 이미지"
+
+#. module: Jeisys_QR
+#: model:ir.model.fields,field_description:Jeisys_QR.field_qr_list__Naver_Qr_Link
+msgid "Naver QR Link"
+msgstr "네이버 QR 링크"
+
+#. module: Jeisys_QR
+#: model_terms:ir.ui.view,arch_db:Jeisys_QR.QR_Option_change_form
+msgid "OK"
+msgstr "저장"
+
+#. module: Jeisys_QR
+#: model:ir.model.fields.selection,name:Jeisys_QR.selection__qr_list__Qr_type__odoo
+msgid "Odoo"
+msgstr ""
+
+#. module: Jeisys_QR
+#: model:ir.model.fields,field_description:Jeisys_QR.field_qr_list__Odoo_Qr_img_binary
+msgid "Odoo QR Code"
+msgstr "Odoo QR 이미지"
+
+#. module: Jeisys_QR
+#: model:ir.model.fields,field_description:Jeisys_QR.field_qr_list__Odoo_Qr_Link
+msgid "Odoo Qr Link"
+msgstr "Odoo QR 링크"
+
+#. module: Jeisys_QR
+#: model:ir.ui.menu,name:Jeisys_QR.menu_qrcode_option
+msgid "Option"
+msgstr "장비 옵션 관리"
+
+#. module: Jeisys_QR
+#: model:ir.model.fields.selection,name:Jeisys_QR.selection__create_qr_option__equipment_type__potenza
+#: model:ir.model.fields.selection,name:Jeisys_QR.selection__qr_list__Equipment_type__potenza
+#: model:ir.model.fields.selection,name:Jeisys_QR.selection__qr_option__equipment_type__potenza
+msgid "POTENZA"
+msgstr ""
+
+#. module: Jeisys_QR
+#: model:ir.ui.menu,name:Jeisys_QR.menu_qrcode_root
+msgid "QR"
+msgstr ""
+
+#. module: Jeisys_QR
+#: model:ir.model,name:Jeisys_QR.model_qr_option
+msgid "QR Code Option"
+msgstr ""
+
+#. module: Jeisys_QR
+#: model:ir.model,name:Jeisys_QR.model_qr_list
+msgid "QR Code list"
+msgstr ""
+
+#. module: Jeisys_QR
+#: model:ir.actions.act_window,name:Jeisys_QR.action_qr_list
+msgid "QR List"
+msgstr "영상 관리"
+
+#. module: Jeisys_QR
+#: model:ir.actions.act_window,name:Jeisys_QR.action_qr_option
+msgid "QR Option"
+msgstr "장비 옵션"
+
+#. module: Jeisys_QR
+#: model:ir.actions.act_window,name:Jeisys_QR.action_qr_view
+msgid "QR View"
+msgstr "영상"
+
+#. module: Jeisys_QR
+#: model:ir.model.fields,field_description:Jeisys_QR.field_qr_list__Qr_type
+msgid "Qr Type"
+msgstr "QR 종류"
+
+#. module: Jeisys_QR
+#: model:ir.model.fields,field_description:Jeisys_QR.field_qr_list__Title
+msgid "Title"
+msgstr "제목"
+
+#. module: Jeisys_QR
+#: model:ir.model.fields.selection,name:Jeisys_QR.selection__qr_list__country__usa
+msgid "USA"
+msgstr "미국"
+
+#. module: Jeisys_QR
+#: model:ir.model.fields,field_description:Jeisys_QR.field_qr_list__Odoo_Qr_key
+msgid "Unique Key"
+msgstr "고유 키"
+
+#. module: Jeisys_QR
+#: model:ir.model.fields,field_description:Jeisys_QR.field_qr_list__embed_code
+msgid "Video"
+msgstr ""
+
+#. module: Jeisys_QR
+#: model:ir.model.fields,field_description:Jeisys_QR.field_qr_list__video_link
+msgid "Video URL"
+msgstr "영상 URL"
+
+#. module: Jeisys_QR
+#: model:ir.ui.menu,name:Jeisys_QR.menu_qrcode_View
+msgid "View"
+msgstr "영상"
+
+#. module: Jeisys_QR
+#: model_terms:ir.ui.view,arch_db:Jeisys_QR.view_qr_list_form
+msgid "add"
+msgstr "추가"
+
+#. module: Jeisys_QR
+#. odoo-python
+#: code:addons/Jeisys_QR/models/QR.py:0
+#, python-format
+msgid "key must be unique"
+msgstr "Key값이 중복됬습니다. 확인 부탁드립니다."
+
+#. module: Jeisys_QR
+#. odoo-python
+#: code:addons/Jeisys_QR/models/QrOption.py:0
+#: code:addons/Jeisys_QR/wizard/Create_option.py:0
+#, python-format
+msgid "type must be unique"
+msgstr "이미 생성된 옵션입니다. 확인 부탁드립니다."
+
+#. module: Jeisys_QR
+#: model:ir.model.fields.selection,name:Jeisys_QR.selection__qr_list__country__japen
+msgid "日本"
+msgstr "일본"
+
+#. module: Jeisys_QR
+#: model_terms:ir.ui.view,arch_db:Jeisys_QR.view_qr_list_form
+msgid "링크를 입력해주세요."
+msgstr ""
+
+#. module: Jeisys_QR
+#: model_terms:ir.ui.view,arch_db:Jeisys_QR.view_qr_list_form
+msgid "비디오 링크를 입력해주세요."
+msgstr ""
+
+#. module: Jeisys_QR
+#: model_terms:ir.ui.view,arch_db:Jeisys_QR.view_qr_option_form
+msgid "옵션명을 입력해주세요"
+msgstr ""
+
+#. module: Jeisys_QR
+#: model_terms:ir.ui.view,arch_db:Jeisys_QR.view_qr_list_form
+#: model_terms:ir.ui.view,arch_db:Jeisys_QR.view_qr_view_form
+msgid "제목을 입력해주세요"
+msgstr ""
+
+#. module: Jeisys_QR
+#: model:ir.model.fields.selection,name:Jeisys_QR.selection__qr_list__country__korea
+msgid "한국"
+msgstr ""

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="product_generation_action" model="ir.actions.act_window">
+        <field name="name">Product Generation</field>        <!-- Window action 이름 -->
+        <field name="type">ir.actions.act_window</field>        <!--동작 방식-->
+        <field name="res_model">product.generation</field>        <!--Db 이름 -->
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="product_generation_view_tree" model="ir.ui.view">
+        <field name="name">product.generation.view.tree</field>
+        <field name="model">product.generation</field>
+        <field name='arch' type='xml'>
+            <tree>
+                <field name='Product_Class'/>
+                <field name='Product_Line'/>
+                <field name='Product_Model'/>
+                <field name='Product_Generation'/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="product_generation_view_form" model="ir.ui.view">
+        <field name="name">product.generation.view.form</field>
+        <field name="model">product.generation</field>
+        <field name='arch' type='xml'>
+            <form>
+                <sheet>
+                    <group>
+                        <field name="Product_Class"/>
+                        <field name="Product_Line"/>
+                        <field name='Product_Model'/>
+                        <field name='Product_Generation'/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+</odoo>
+
