@@ -7,6 +7,7 @@
         'security/ir.model.access.csv',
 
         'wizard/Create_class.xml',
+        'wizard/Create_line.xml',
 
         'views/product_example_view.xml',
         'views/product_main_view.xml',
