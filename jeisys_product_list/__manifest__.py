@@ -8,6 +8,8 @@
 
         'wizard/Create_class.xml',
         'wizard/Create_line.xml',
+        'wizard/Create_model.xml',
+        'wizard/Create_genration.xml',
 
         'views/product_example_view.xml',
         'views/product_main_view.xml',

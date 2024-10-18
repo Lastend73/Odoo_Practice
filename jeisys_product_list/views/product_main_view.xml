@@ -32,6 +32,8 @@
                 <header>
                     <button name="add_product_class" type="object" string='Add Product Class' class="btn-primary"/>
                     <button name="add_product_line" type="object" string='Add Product Line' class="btn-primary"/>
+                    <button name="add_product_model" type="object" string='Add Product Model' class="btn-primary"/>
+                    <button name="add_product_generation" type="object" string='Add Product Geneartion' class="btn-primary"/>
                 </header>
                     <group>
                         <field name="Product_Class"/>

@@ -6,7 +6,7 @@ from odoo.http import request
 
 class product_generation(models.Model):
     _name = 'product.generation'
-    _description = "Product Generation"
+    _description = "Product D"
     _rec_name = 'Product_Generation' #소제목 변경
     
     Product_Class = fields.Many2one("product.class", string="Product Class", required="True") 

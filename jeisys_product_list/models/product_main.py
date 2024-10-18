@@ -53,25 +53,35 @@ class product_main(models.Model):
                         }
         }
     
-    # def add_product_model(self):
-    #     return {
-    #         "name":"Add Product Line",
-    #         "type" : "ir.actions.act_window",
-    #         "res_model" : "create.qr.option",
-    #         "view_mode" : "form",
-    #         "target" : "new", #popup 하려면 필요한 옵션(?)
-    #         "context" : {'default_equipment_type':self.Equipment_type}
-    #     }
+    def add_product_model(self):
+        return {
+                "name":"Add Product model",
+                "type" : "ir.actions.act_window",
+                "res_model" : "create.product.model",
+                "view_mode" : "form",
+                "target" : "new", #popup 하려면 필요한 옵션(?)
+                "context" : {
+                        "default_Product_Class": self.Product_Class.id,
+                        "default_Product_Line": self.Product_Line.id,
+                        'user_data_id' : self.id
+                        }
+        }
     
-    # def add_product_generation(self):
-    #     return {
-    #         "name":"Add Product Line",
-    #         "type" : "ir.actions.act_window",
-    #         "res_model" : "create.qr.option",
-    #         "view_mode" : "form",
-    #         "target" : "new", #popup 하려면 필요한 옵션(?)
-    #         "context" : {'default_equipment_type':self.Equipment_type}
-    #     }
+        
+    def add_product_generation(self):
+        return {
+                "name":"Add Product generation",
+                "type" : "ir.actions.act_window",
+                "res_model" : "create.product.generation",
+                "view_mode" : "form",
+                "target" : "new", #popup 하려면 필요한 옵션(?)
+                "context" : {
+                        "default_Product_Class": self.Product_Class.id,
+                        "default_Product_Line": self.Product_Line.id,
+                        "default_Product_Model": self.Product_Model.id,
+                        'user_data_id' : self.id
+                        }
+        }
     
     # def add_product_generation(self):
     #     return {
