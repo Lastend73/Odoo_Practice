@@ -13,20 +13,20 @@ class product_main(models.Model):
     Product_Nation = fields.Char(string="Product Nation") 
     Permission_name = fields.Char(string="Permission name") 
    
-#     @api.onchange('Product_Class')
-#     def onchange_Equipment(self):
-#             self.Product_Line =""
-#             self.Product_Model =""
-#             self.Product_Generation =""
+    @api.onchange('Product_Class')
+    def onchange_Class(self):
+            self.Product_Line =""
+            self.Product_Model =""
+            self.Product_Generation =""
        
-#     @api.onchange('Product_Line')
-#     def onchange_Equipment(self):
-#             self.Product_Model =""
-#             self.Product_Generation =""
+    @api.onchange('Product_Line')
+    def onchange_Line(self):
+            self.Product_Model =""
+            self.Product_Generation =""
 
-#     @api.onchange('Product_Model')
-#     def onchange_Equipment(self):
-#             self.Product_Generation =""
+    @api.onchange('Product_Model')
+    def onchange_Model(self):
+            self.Product_Generation =""
 
     def add_product_class(self):
         return {

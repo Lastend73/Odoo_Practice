@@ -29,17 +29,26 @@
         <field name='arch' type='xml'>
             <form>
                 <sheet>
-                <header>
-                    <button name="add_product_class" type="object" string='Add Product Class' class="btn-primary"/>
-                    <button name="add_product_line" type="object" string='Add Product Line' class="btn-primary"/>
-                    <button name="add_product_model" type="object" string='Add Product Model' class="btn-primary"/>
-                    <button name="add_product_generation" type="object" string='Add Product Geneartion' class="btn-primary"/>
-                </header>
+                    <header>
+                        <h1>제품 입력</h1>
+                    </header>
                     <group>
-                        <field name="Product_Class"/>
-                        <field name="Product_Line"/>
-                        <field name="Product_Model"/>
-                        <field name="Product_Generation"/>
+                        <field name="Product_Class" options="{'no_open':True,'no_create':True}"/>
+                        <span></span>
+                        <button name="add_product_class" type="object" string='Add Product Class' class="btn-primary"/>
+
+                        <field name="Product_Line" options="{'no_open':True,'no_create':True}"/>
+                        <span></span>
+                        <button name="add_product_line" type="object" string='Add Product Line' class="btn-primary"/>
+
+                        <field name="Product_Model" options="{'no_open':True,'no_create':True}"/>
+                        <span></span>
+                        <button name="add_product_model" type="object" string='Add Product Model' class="btn-primary"/>
+
+                        <field name="Product_Generation" options="{'no_open':True,'no_create':True}"/>
+                        <span></span>
+                        <button name="add_product_generation" type="object" string='Add Product Geneartion' class="btn-primary"/>
+                        
                         <field name="Product_Nation"/>
                         <field name="Permission_name"/>
                     </group>
@@ -55,7 +64,7 @@
         <field name='arch' type='xml'>
             <search>
                 <searchpanel>
-                    
+
                 </searchpanel>
             </search>
         </field>
