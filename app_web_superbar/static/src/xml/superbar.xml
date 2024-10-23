@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<templates id="template" xml:space="preserve">
+    <!--owl的 处理继承， web.SearchPanel-->
+    <t t-inherit="web.SearchPanel.Regular" t-inherit-mode="extension" owl="1">
+        <!--        标头收缩-->
+        <xpath expr="//header[hasclass('o_search_panel_section_header')]//b" position="attributes">
+            <attribute name="t-on-click">(ev) => this.toggleHeader(ev)</attribute>
+            <attribute name="class">cursor-pointer</attribute>
+        </xpath>
+        <!--改图标-->
+        <!--All改为标头的 x -->
+        <xpath expr="//header[hasclass('o_search_panel_section_header')]//b" position="after">
+            <em t-att-class="'o_search_panel_category_value' + (!section.activeValueId ? ' o_hidden' : '')" t-att-data-category-id="section.id">
+                <button class="o_search_panel_section_clear btn btn-sm btn-default fa fa-lg fa-times-circle" type="button"
+                        t-att-data-field-name="section.fieldName"
+                        t-att-data-category-id="section.id"
+                        title="Show All Data"
+                        t-on-click="() => this.toggleCategory(section, {childrenIds:[]})"/>
+            </em>
+        </xpath>
+        <!--        增加 toggle-->
+        <xpath expr="//div[hasclass('o_search_panel')]/section" position="after">
+            <div class="o_search_panel_control" t-on-click="() => this._onSearchPanelControlToggleClicked()"/>
+        </xpath>
+    </t>
+    <!--    原来 All 不显示 -->
+    <t t-inherit="web.SearchPanel.Category" t-inherit-mode="extension" owl="1">
+        <xpath expr="//header[hasclass('list-group-item-action')]" position="attributes">
+            <attribute name="t-att-class">{ 'active text-900 fw-bold': state.active[section.id] === valueId, 'o_hidden': value.bold }</attribute>
+        </xpath>
+    </t>
+    <!--    end处理all-->
+    <!--end owl的 处理继承， web.SearchPanel-->
+</templates>
