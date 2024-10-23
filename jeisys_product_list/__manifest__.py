@@ -21,6 +21,11 @@
 
         'views/product_main_menu.xml'
     ],
+    'assets': {
+        'web.assets_backend': [
+            'jeisys_product_list/static/src/js/my_kanban_script.js',
+        ],
+    },
     'license': 'LGPL-3',
     "installable": True,
     "auto_install": False,

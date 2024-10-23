@@ -24,3 +24,9 @@ class QRCode_link(http.Controller):
             return redirect(value)
         else:
             print("레코드를 찾을 수 없습니다.")
+
+    @http.route('/qr/views', type='http', auth='public', website=True)
+    def qr_list(self,**kw):
+        
+        qrcod = request.env["qr.list"].sudo().search([])
+        return request.render("Jeisys_QR.qr_page",{})

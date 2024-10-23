@@ -1,8 +1,7 @@
 from odoo import api, fields, models, _
 import json
 
-from odoo import http
-from odoo.http import request
+from odoo.exceptions import ValidationError
 
 class product_generation(models.Model):
     _name = 'product.generation'
@@ -13,6 +12,13 @@ class product_generation(models.Model):
     Product_Line = fields.Many2one("product.line", string="Product Line", required="True") 
     Product_Model= fields.Many2one("product.model", string="Product Model", required="True") 
     Product_Generation= fields.Char(string="Product Generation", required="True")
+
+    @api.onchange('Product_Generation')
+    def option_check(self):
+        type_check =self.search_count([('Product_Class','=',self.Product_Class.id),('Product_Line','=',self.Product_Line.id),('Product_Model','=',self.Product_Model.id),('Product_Generation','=',self.Product_Generation)])
+        if bool(type_check) == True:
+            self.Product_Generation=""
+            raise ValidationError(_("type must be unique"))
     
    
 

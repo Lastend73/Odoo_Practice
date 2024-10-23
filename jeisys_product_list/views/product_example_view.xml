@@ -50,6 +50,10 @@
                             .o_kanban_header i{
                                 display: none !important;
                             }
+
+                            .o_kanban_record{
+                                pointer-events: none;
+                            }
                         </style>
                         <div class="oe_kanban_global_click">
                             <span t-esc='record.Product_Type_Title.raw_value' style='font-size: 2vh;'/>
@@ -60,6 +64,6 @@
         </field>
     </record>
 
-
+    
 </odoo>
 

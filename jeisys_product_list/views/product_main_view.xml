@@ -48,7 +48,7 @@
                         <field name="Product_Generation" options="{'no_open':True,'no_create':True}"/>
                         <span></span>
                         <button name="add_product_generation" type="object" string='Add Product Geneartion' class="btn-primary"/>
-                        
+
                         <field name="Product_Nation"/>
                         <field name="Permission_name"/>
                     </group>
@@ -58,17 +58,30 @@
     </record>
 
 
-    <record id="product_main_view_search" model="ir.ui.view">
-        <field name="name">product.main.search</field>
-        <field name="model">product.main</field>
-        <field name='arch' type='xml'>
-            <search>
-                <searchpanel>
-
+<record id="product_main_view_search" model="ir.ui.view">
+    <field name="name">product.main.search</field>
+    <field name="model">product.main</field>
+    <field name="arch" type="xml">
+        <search>
+                <searchpanel view_mode="list">
+                    <field name="Product_Class" group_by="Product_Class" string="Test"/>
                 </searchpanel>
-            </search>
+        </search>
+    </field>
+</record>
+
+    <!-- <record id="product_main_view_search_inherit" model="ir.ui.view">
+        <field name="name">product.main.search.inherit</field>
+        <field name="model">product.main</field>
+        <field name="inherit_id" ref="jeisys_product_list.product_main_view_search"/>
+        <field name="arch" type="xml">
+            <xpath expr="//search">
+                <searchpanel view_mode="list">
+                    <field name="Product_Class" group_by="Product_Class" string="Test"/>
+                </searchpanel>
+            </xpath>
         </field>
-    </record>
+    </record> -->
 </odoo>
 
     

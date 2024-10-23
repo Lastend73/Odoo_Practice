@@ -1,0 +1,8 @@
+<odoo>
+    <template id="assets_backend" name="jeisys_product_list assets" inherit_id="jeisys_product_list.product_example_kanban">
+        <xpath expr="." position="inside">
+            <script type="text/javascript" src="/jeisys_product_list/static/src/js/product.model.js"></script>
+            <link rel="stylesheet" href="/jeisys_product_list/static/src/scss/my_style.scss"/> 
+        </xpath>
+    </template>
+</odoo>

@@ -1,0 +1,12 @@
+<odoo>
+
+<template id="qr_page" name="Qr code page">
+    <t name="Test View" priority="29" t-name="test_website.test_view">
+        <t t-call="website.layout">
+            <p>Test View</p>
+            <p>placeholder</p>
+        </t>
+    </t>
+</template>
+
+</odoo>
