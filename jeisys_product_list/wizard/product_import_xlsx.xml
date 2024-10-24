@@ -1,0 +1,29 @@
+<odoo>
+
+<record id="product_import_xlsx" model="ir.ui.view">
+        <field name="name">import product xlsx</field>
+        <field name="model">product.import.wiz</field>
+        <field name="arch" type="xml">
+            <form string='Import proudct by Excel'>
+                <group>
+                    <field name="file_name" invisible='1'/>
+                    <field name="import_file" widget="binary" filename="file_name" string="file"/>
+                </group>
+                <footer>
+                    <button string="OK" name="product_input_excel" type='object' class="btn-primary"/>
+                    <button string="Cancel" special="cancel" class="btn"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_import_product_xlsx" model="ir.actions.act_window">
+        <field name="name">import product xlsx</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">product.import.wiz</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="product_import_xlsx"/>
+        <field name="target">new</field>
+    </record>
+
+</odoo>

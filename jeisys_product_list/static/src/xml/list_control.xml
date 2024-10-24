@@ -1,0 +1,9 @@
+<templates>
+    <t t-name="jeisys_product_lst.ListView.Buttons" t-inherit="web.ListView.Buttons" t-inherit-mode="extension">
+        <xpath expr="//div[hasclass('o_list_buttons')]" position = 'inside'>
+            <button class='btn btn-primary' type='object' style="margin-left : 10px" t-on-click="importExcel">
+                Import XlsX
+            </button>
+        </xpath>
+    </t>
+</templates>

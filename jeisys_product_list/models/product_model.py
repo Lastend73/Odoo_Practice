@@ -6,16 +6,10 @@ class product_model(models.Model):
     _name = 'product.model'
     _description = "Product Model"
     _rec_name = 'Product_Model' #소제목 변경
-    _parent_store = True
     
     Product_Class = fields.Many2one("product.class", string="Product Class", required="True") 
     Product_Line = fields.Many2one("product.line", string="Product Line", required="True") 
     Product_Model= fields.Char(string="Product Model", required="True")
-
-    parent_id = fields.Many2one('product.model', string='Parent class')
-    child_ids = fields.One2many('product.generation', 'Product_Model_id', string='Child lines')
-    parent_path = fields.Char(index=True)
-    Product_Line_id = fields.Many2one("product.line", string='Model Product_Line')
     
     @api.onchange('Product_Model')
     def option_check(self):

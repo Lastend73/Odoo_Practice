@@ -1,0 +1,408 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* jeisys_product_list
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0-20240905\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-10-24 04:59+0000\n"
+"PO-Revision-Date: 2024-10-24 04:59+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: jeisys_product_list
+#: model_terms:ir.ui.view,arch_db:jeisys_product_list.product_main_view_form
+msgid "Add Product Class"
+msgstr "용도 추가"
+
+#. module: jeisys_product_list
+#: model_terms:ir.ui.view,arch_db:jeisys_product_list.product_main_view_form
+msgid "Add Product Geneartion"
+msgstr "세대 추가"
+
+#. module: jeisys_product_list
+#: model_terms:ir.ui.view,arch_db:jeisys_product_list.product_main_view_form
+msgid "Add Product Line"
+msgstr "제품군 추가"
+
+#. module: jeisys_product_list
+#: model_terms:ir.ui.view,arch_db:jeisys_product_list.product_main_view_form
+msgid "Add Product Model"
+msgstr "모델 추가"
+
+#. module: jeisys_product_list
+#: model_terms:ir.ui.view,arch_db:jeisys_product_list.product_class_change_form
+#: model_terms:ir.ui.view,arch_db:jeisys_product_list.product_generation_change_form
+#: model_terms:ir.ui.view,arch_db:jeisys_product_list.product_import_xlsx
+#: model_terms:ir.ui.view,arch_db:jeisys_product_list.product_line_change_form
+#: model_terms:ir.ui.view,arch_db:jeisys_product_list.product_model_change_form
+msgid "Cancel"
+msgstr "취소"
+
+#. module: jeisys_product_list
+#: model_terms:ir.ui.view,arch_db:jeisys_product_list.product_main_view_search
+msgid "Class"
+msgstr "제품 용도"
+
+#. module: jeisys_product_list
+#: model:ir.model,name:jeisys_product_list.model_create_product_class
+msgid "Create Product Class"
+msgstr ""
+
+#. module: jeisys_product_list
+#: model:ir.model,name:jeisys_product_list.model_create_product_generation
+msgid "Create Product Generation"
+msgstr ""
+
+#. module: jeisys_product_list
+#: model:ir.model,name:jeisys_product_list.model_create_product_model
+msgid "Create Product Model"
+msgstr ""
+
+#. module: jeisys_product_list
+#: model:ir.model,name:jeisys_product_list.model_create_product_line
+msgid "Create Product line"
+msgstr ""
+
+#. module: jeisys_product_list
+#: model_terms:ir.ui.view,arch_db:jeisys_product_list.product_class_change_form
+msgid "Create product class"
+msgstr ""
+
+#. module: jeisys_product_list
+#: model:ir.actions.act_window,name:jeisys_product_list.create_product_generation_action
+#: model_terms:ir.ui.view,arch_db:jeisys_product_list.product_generation_change_form
+msgid "Create product generation"
+msgstr ""
+
+#. module: jeisys_product_list
+#: model:ir.actions.act_window,name:jeisys_product_list.action_qr_create_option
+#: model_terms:ir.ui.view,arch_db:jeisys_product_list.product_line_change_form
+msgid "Create product line"
+msgstr "제품군 추가"
+
+#. module: jeisys_product_list
+#: model:ir.actions.act_window,name:jeisys_product_list.create_product_model_action
+#: model_terms:ir.ui.view,arch_db:jeisys_product_list.product_model_change_form
+msgid "Create product model"
+msgstr ""
+
+#. module: jeisys_product_list
+#: model:ir.model.fields,field_description:jeisys_product_list.field_create_product_class__create_uid
+#: model:ir.model.fields,field_description:jeisys_product_list.field_create_product_generation__create_uid
+#: model:ir.model.fields,field_description:jeisys_product_list.field_create_product_line__create_uid
+#: model:ir.model.fields,field_description:jeisys_product_list.field_create_product_model__create_uid
+#: model:ir.model.fields,field_description:jeisys_product_list.field_product_class__create_uid
+#: model:ir.model.fields,field_description:jeisys_product_list.field_product_example__create_uid
+#: model:ir.model.fields,field_description:jeisys_product_list.field_product_generation__create_uid
+#: model:ir.model.fields,field_description:jeisys_product_list.field_product_import_wiz__create_uid
+#: model:ir.model.fields,field_description:jeisys_product_list.field_product_line__create_uid
+#: model:ir.model.fields,field_description:jeisys_product_list.field_product_main__create_uid
+#: model:ir.model.fields,field_description:jeisys_product_list.field_product_model__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: jeisys_product_list
+#: model:ir.model.fields,field_description:jeisys_product_list.field_create_product_class__create_date
+#: model:ir.model.fields,field_description:jeisys_product_list.field_create_product_generation__create_date
+#: model:ir.model.fields,field_description:jeisys_product_list.field_create_product_line__create_date
+#: model:ir.model.fields,field_description:jeisys_product_list.field_create_product_model__create_date
+#: model:ir.model.fields,field_description:jeisys_product_list.field_product_class__create_date
+#: model:ir.model.fields,field_description:jeisys_product_list.field_product_example__create_date
+#: model:ir.model.fields,field_description:jeisys_product_list.field_product_generation__create_date
+#: model:ir.model.fields,field_description:jeisys_product_list.field_product_import_wiz__create_date
+#: model:ir.model.fields,field_description:jeisys_product_list.field_product_line__create_date
+#: model:ir.model.fields,field_description:jeisys_product_list.field_product_main__create_date
+#: model:ir.model.fields,field_description:jeisys_product_list.field_product_model__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: jeisys_product_list
+#: model:ir.model.fields,field_description:jeisys_product_list.field_create_product_class__display_name
+#: model:ir.model.fields,field_description:jeisys_product_list.field_create_product_generation__display_name
+#: model:ir.model.fields,field_description:jeisys_product_list.field_create_product_line__display_name
+#: model:ir.model.fields,field_description:jeisys_product_list.field_create_product_model__display_name
+#: model:ir.model.fields,field_description:jeisys_product_list.field_product_class__display_name
+#: model:ir.model.fields,field_description:jeisys_product_list.field_product_example__display_name
+#: model:ir.model.fields,field_description:jeisys_product_list.field_product_generation__display_name
+#: model:ir.model.fields,field_description:jeisys_product_list.field_product_import_wiz__display_name
+#: model:ir.model.fields,field_description:jeisys_product_list.field_product_line__display_name
+#: model:ir.model.fields,field_description:jeisys_product_list.field_product_main__display_name
+#: model:ir.model.fields,field_description:jeisys_product_list.field_product_model__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: jeisys_product_list
+#: model:ir.ui.menu,name:jeisys_product_list.product_list_example
+msgid "Example"
+msgstr "예시"
+
+#. module: jeisys_product_list
+#: model:ir.ui.menu,name:jeisys_product_list.product_import_excel
+msgid "Excel"
+msgstr "추가(엑셀)"
+
+#. module: jeisys_product_list
+#: model:ir.model.fields,field_description:jeisys_product_list.field_product_import_wiz__file_name
+msgid "File name"
+msgstr "파일"
+
+#. module: jeisys_product_list
+#: model_terms:ir.ui.view,arch_db:jeisys_product_list.product_main_view_search
+msgid "Group By"
+msgstr ""
+
+#. module: jeisys_product_list
+#: model:ir.model.fields,field_description:jeisys_product_list.field_create_product_class__id
+#: model:ir.model.fields,field_description:jeisys_product_list.field_create_product_generation__id
+#: model:ir.model.fields,field_description:jeisys_product_list.field_create_product_line__id
+#: model:ir.model.fields,field_description:jeisys_product_list.field_create_product_model__id
+#: model:ir.model.fields,field_description:jeisys_product_list.field_product_class__id
+#: model:ir.model.fields,field_description:jeisys_product_list.field_product_example__id
+#: model:ir.model.fields,field_description:jeisys_product_list.field_product_generation__id
+#: model:ir.model.fields,field_description:jeisys_product_list.field_product_import_wiz__id
+#: model:ir.model.fields,field_description:jeisys_product_list.field_product_line__id
+#: model:ir.model.fields,field_description:jeisys_product_list.field_product_main__id
+#: model:ir.model.fields,field_description:jeisys_product_list.field_product_model__id
+msgid "ID"
+msgstr ""
+
+#. module: jeisys_product_list
+#: model:ir.model.fields,field_description:jeisys_product_list.field_product_import_wiz__import_file
+msgid "Import File"
+msgstr "파일"
+
+#. module: jeisys_product_list
+#. odoo-javascript
+#: code:addons/jeisys_product_list/static/src/xml/list_control.xml:0
+#, python-format
+msgid "Import XlsX"
+msgstr ""
+
+#. module: jeisys_product_list
+#: model_terms:ir.ui.view,arch_db:jeisys_product_list.product_import_xlsx
+msgid "Import proudct by Excel"
+msgstr ""
+
+#. module: jeisys_product_list
+#: model:ir.model.fields,field_description:jeisys_product_list.field_create_product_class____last_update
+#: model:ir.model.fields,field_description:jeisys_product_list.field_create_product_generation____last_update
+#: model:ir.model.fields,field_description:jeisys_product_list.field_create_product_line____last_update
+#: model:ir.model.fields,field_description:jeisys_product_list.field_create_product_model____last_update
+#: model:ir.model.fields,field_description:jeisys_product_list.field_product_class____last_update
+#: model:ir.model.fields,field_description:jeisys_product_list.field_product_example____last_update
+#: model:ir.model.fields,field_description:jeisys_product_list.field_product_generation____last_update
+#: model:ir.model.fields,field_description:jeisys_product_list.field_product_import_wiz____last_update
+#: model:ir.model.fields,field_description:jeisys_product_list.field_product_line____last_update
+#: model:ir.model.fields,field_description:jeisys_product_list.field_product_main____last_update
+#: model:ir.model.fields,field_description:jeisys_product_list.field_product_model____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: jeisys_product_list
+#: model:ir.model.fields,field_description:jeisys_product_list.field_create_product_class__write_uid
+#: model:ir.model.fields,field_description:jeisys_product_list.field_create_product_generation__write_uid
+#: model:ir.model.fields,field_description:jeisys_product_list.field_create_product_line__write_uid
+#: model:ir.model.fields,field_description:jeisys_product_list.field_create_product_model__write_uid
+#: model:ir.model.fields,field_description:jeisys_product_list.field_product_class__write_uid
+#: model:ir.model.fields,field_description:jeisys_product_list.field_product_example__write_uid
+#: model:ir.model.fields,field_description:jeisys_product_list.field_product_generation__write_uid
+#: model:ir.model.fields,field_description:jeisys_product_list.field_product_import_wiz__write_uid
+#: model:ir.model.fields,field_description:jeisys_product_list.field_product_line__write_uid
+#: model:ir.model.fields,field_description:jeisys_product_list.field_product_main__write_uid
+#: model:ir.model.fields,field_description:jeisys_product_list.field_product_model__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: jeisys_product_list
+#: model:ir.model.fields,field_description:jeisys_product_list.field_create_product_class__write_date
+#: model:ir.model.fields,field_description:jeisys_product_list.field_create_product_generation__write_date
+#: model:ir.model.fields,field_description:jeisys_product_list.field_create_product_line__write_date
+#: model:ir.model.fields,field_description:jeisys_product_list.field_create_product_model__write_date
+#: model:ir.model.fields,field_description:jeisys_product_list.field_product_class__write_date
+#: model:ir.model.fields,field_description:jeisys_product_list.field_product_example__write_date
+#: model:ir.model.fields,field_description:jeisys_product_list.field_product_generation__write_date
+#: model:ir.model.fields,field_description:jeisys_product_list.field_product_import_wiz__write_date
+#: model:ir.model.fields,field_description:jeisys_product_list.field_product_line__write_date
+#: model:ir.model.fields,field_description:jeisys_product_list.field_product_main__write_date
+#: model:ir.model.fields,field_description:jeisys_product_list.field_product_model__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: jeisys_product_list
+#: model_terms:ir.ui.view,arch_db:jeisys_product_list.product_main_view_search
+msgid "Line"
+msgstr "제품군"
+
+#. module: jeisys_product_list
+#: model:ir.ui.menu,name:jeisys_product_list.product_list_Main
+msgid "Main"
+msgstr "목록"
+
+#. module: jeisys_product_list
+#: model_terms:ir.ui.view,arch_db:jeisys_product_list.product_class_change_form
+#: model_terms:ir.ui.view,arch_db:jeisys_product_list.product_generation_change_form
+#: model_terms:ir.ui.view,arch_db:jeisys_product_list.product_import_xlsx
+#: model_terms:ir.ui.view,arch_db:jeisys_product_list.product_line_change_form
+#: model_terms:ir.ui.view,arch_db:jeisys_product_list.product_model_change_form
+msgid "OK"
+msgstr ""
+
+#. module: jeisys_product_list
+#: model:ir.ui.menu,name:jeisys_product_list.product_list_option
+msgid "Option"
+msgstr "옵션"
+
+#. module: jeisys_product_list
+#: model:ir.model.fields,field_description:jeisys_product_list.field_product_main__Permission_name
+msgid "Permission name"
+msgstr "실 사용 명칭"
+
+#. module: jeisys_product_list
+#: model:ir.actions.act_window,name:jeisys_product_list.product_class_action
+#: model:ir.model,name:jeisys_product_list.model_product_class
+#: model:ir.model.fields,field_description:jeisys_product_list.field_create_product_class__Product_Class
+#: model:ir.model.fields,field_description:jeisys_product_list.field_create_product_generation__Product_Class
+#: model:ir.model.fields,field_description:jeisys_product_list.field_create_product_line__Product_Class
+#: model:ir.model.fields,field_description:jeisys_product_list.field_create_product_model__Product_Class
+#: model:ir.model.fields,field_description:jeisys_product_list.field_product_class__Product_Class
+#: model:ir.model.fields,field_description:jeisys_product_list.field_product_generation__Product_Class
+#: model:ir.model.fields,field_description:jeisys_product_list.field_product_line__Product_Class
+#: model:ir.model.fields,field_description:jeisys_product_list.field_product_main__Product_Class
+#: model:ir.model.fields,field_description:jeisys_product_list.field_product_model__Product_Class
+#: model:ir.model.fields.selection,name:jeisys_product_list.selection__product_example__Product_Type__class
+msgid "Product Class"
+msgstr "제품 용도"
+
+#. module: jeisys_product_list
+#: model:ir.model.fields.selection,name:jeisys_product_list.selection__product_example__Product_Type__components
+msgid "Product Components"
+msgstr ""
+
+#. module: jeisys_product_list
+#: model:ir.model,name:jeisys_product_list.model_product_generation
+msgid "Product D"
+msgstr ""
+
+#. module: jeisys_product_list
+#: model:ir.actions.act_window,name:jeisys_product_list.product_example_action
+msgid "Product Example"
+msgstr "제품 예시"
+
+#. module: jeisys_product_list
+#: model:ir.actions.act_window,name:jeisys_product_list.product_generation_action
+#: model:ir.model.fields,field_description:jeisys_product_list.field_create_product_generation__Product_Generation
+#: model:ir.model.fields,field_description:jeisys_product_list.field_product_generation__Product_Generation
+#: model:ir.model.fields,field_description:jeisys_product_list.field_product_main__Product_Generation
+#: model:ir.model.fields.selection,name:jeisys_product_list.selection__product_example__Product_Type__generation
+msgid "Product Generation"
+msgstr "제품 세대"
+
+#. module: jeisys_product_list
+#: model:ir.actions.act_window,name:jeisys_product_list.product_line_action
+#: model:ir.model,name:jeisys_product_list.model_product_line
+#: model:ir.model.fields,field_description:jeisys_product_list.field_create_product_generation__Product_Line
+#: model:ir.model.fields,field_description:jeisys_product_list.field_create_product_line__Product_Line
+#: model:ir.model.fields,field_description:jeisys_product_list.field_create_product_model__Product_Line
+#: model:ir.model.fields,field_description:jeisys_product_list.field_product_generation__Product_Line
+#: model:ir.model.fields,field_description:jeisys_product_list.field_product_line__Product_Line
+#: model:ir.model.fields,field_description:jeisys_product_list.field_product_main__Product_Line
+#: model:ir.model.fields,field_description:jeisys_product_list.field_product_model__Product_Line
+#: model:ir.model.fields.selection,name:jeisys_product_list.selection__product_example__Product_Type__line
+msgid "Product Line"
+msgstr "제품군"
+
+#. module: jeisys_product_list
+#: model:ir.ui.menu,name:jeisys_product_list.product_list_root
+msgid "Product List"
+msgstr "제품 체계도"
+
+#. module: jeisys_product_list
+#: model:ir.actions.act_window,name:jeisys_product_list.product_main_action
+#: model:ir.model,name:jeisys_product_list.model_product_main
+msgid "Product Main"
+msgstr "제품 목록"
+
+#. module: jeisys_product_list
+#: model:ir.actions.act_window,name:jeisys_product_list.product_model_action
+#: model:ir.model,name:jeisys_product_list.model_product_model
+#: model:ir.model.fields,field_description:jeisys_product_list.field_create_product_generation__Product_Model
+#: model:ir.model.fields,field_description:jeisys_product_list.field_create_product_model__Product_Model
+#: model:ir.model.fields,field_description:jeisys_product_list.field_product_generation__Product_Model
+#: model:ir.model.fields,field_description:jeisys_product_list.field_product_main__Product_Model
+#: model:ir.model.fields,field_description:jeisys_product_list.field_product_model__Product_Model
+#: model:ir.model.fields.selection,name:jeisys_product_list.selection__product_example__Product_Type__model
+#: model_terms:ir.ui.view,arch_db:jeisys_product_list.product_main_view_search
+msgid "Product Model"
+msgstr "제품 모델"
+
+#. module: jeisys_product_list
+#: model:ir.model.fields,field_description:jeisys_product_list.field_product_main__Product_Nation
+msgid "Product Nation"
+msgstr "국가명"
+
+#. module: jeisys_product_list
+#: model:ir.model.fields,field_description:jeisys_product_list.field_product_example__Product_Type
+msgid "Product Type"
+msgstr ""
+
+#. module: jeisys_product_list
+#: model:ir.model,name:jeisys_product_list.model_product_example
+msgid "Product example"
+msgstr "제품 예시"
+
+#. module: jeisys_product_list
+#: model:ir.ui.menu,name:jeisys_product_list.product_list_option_class
+msgid "Public Class"
+msgstr "제품 용도 관리"
+
+#. module: jeisys_product_list
+#: model:ir.ui.menu,name:jeisys_product_list.product_list_generation
+msgid "Public Generation"
+msgstr "제품 세대 관리"
+
+#. module: jeisys_product_list
+#: model:ir.ui.menu,name:jeisys_product_list.product_list_option_line
+msgid "Public Line"
+msgstr "제품군 관리"
+
+#. module: jeisys_product_list
+#: model:ir.ui.menu,name:jeisys_product_list.product_list_option_model
+msgid "Public Model"
+msgstr "제품 모델 관리"
+
+#. module: jeisys_product_list
+#: model:ir.model.fields,field_description:jeisys_product_list.field_product_example__Product_Type_Title
+msgid "Title"
+msgstr ""
+
+#. module: jeisys_product_list
+#: model_terms:ir.ui.view,arch_db:jeisys_product_list.product_import_xlsx
+msgid "file"
+msgstr "파일명"
+
+#. module: jeisys_product_list
+#: model:ir.actions.act_window,name:jeisys_product_list.action_import_product_xlsx
+#: model:ir.model,name:jeisys_product_list.model_product_import_wiz
+msgid "import product xlsx"
+msgstr "엑셀 파일을 업로드 해주세요"
+
+#. module: jeisys_product_list
+#. odoo-python
+#: code:addons/jeisys_product_list/models/product_class.py:0
+#: code:addons/jeisys_product_list/models/product_generation.py:0
+#: code:addons/jeisys_product_list/models/product_line.py:0
+#: code:addons/jeisys_product_list/models/product_model.py:0
+#, python-format
+msgid "type must be unique"
+msgstr ""
+
+#. module: jeisys_product_list
+#: model_terms:ir.ui.view,arch_db:jeisys_product_list.product_main_view_form
+msgid "제품 입력"
+msgstr ""

@@ -5,6 +5,7 @@
     <menuitem id = "product_list_example" name ="Example" parent='product_list_root' action='product_example_action' sequence = "1"/>
     <menuitem id = "product_list_Main" name ="Main" parent='product_list_root' action='product_main_action' sequence = "2"/>
     <menuitem id = "product_list_option" name ="Option" parent='product_list_root' sequence = "3"/>
+    <menuitem id = "product_import_excel" name ="Excel" parent='product_list_root' action='action_import_product_xlsx' sequence = "4"/>
 
     <menuitem id = "product_list_option_class" name ="Public Class" parent='product_list_option' action = "product_class_action" sequence = "1"/>
     <menuitem id = "product_list_option_line" name ="Public Line" parent='product_list_option' action = "product_line_action" sequence = "2"/>

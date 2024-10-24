@@ -10,6 +10,7 @@
         'wizard/Create_line.xml',
         'wizard/Create_model.xml',
         'wizard/Create_genration.xml',
+        'wizard/product_import_xlsx.xml',
 
         'views/product_example_view.xml',
         'views/product_main_view.xml',
@@ -23,7 +24,7 @@
     ],
     'assets': {
         'web.assets_backend': [
-            'jeisys_product_list/static/src/js/my_kanban_script.js',
+
         ],
     },
     'license': 'LGPL-3',

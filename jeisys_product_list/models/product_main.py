@@ -9,7 +9,7 @@ class product_main(models.Model):
     Product_Class = fields.Many2one("product.class", string="Product Class", ) 
     Product_Line = fields.Many2one("product.line", string="Product Line", domain="[('Product_Class','=',Product_Class)]") 
     Product_Model= fields.Many2one("product.model", string="Product Model", domain="[('Product_Class','=',Product_Class),('Product_Line','=',Product_Line)]") 
-    Product_Generation= fields.Many2one("product.generation", string="Product_Generation" ) 
+    Product_Generation= fields.Many2one("product.generation", string="Product Generation", domain="[('Product_Class','=',Product_Class),('Product_Line','=',Product_Line),('Product_Model','=',Product_Model)]" ) 
     Product_Nation = fields.Char(string="Product Nation") 
     Permission_name = fields.Char(string="Permission name") 
    
