@@ -4,7 +4,6 @@ from odoo.exceptions import ValidationError
 class product_main(models.Model):
     _name = 'product.main'
     _description = "Product Main"
-    W_rec_name = 'Title' #소제목 변경
     
     Product_Class = fields.Many2one("product.class", string="Product Class", ) 
     Product_Line = fields.Many2one("product.line", string="Product Line", domain="[('Product_Class','=',Product_Class)]") 
@@ -83,21 +82,4 @@ class product_main(models.Model):
                         }
         }
     
-    # def add_product_generation(self):
-    #     return {
-    #         "name":"Add Product Line",
-    #         "type" : "ir.actions.act_window",
-    #         "res_model" : "create.qr.option",
-    #         "view_mode" : "form",
-    #         "target" : "new", #popup 하려면 필요한 옵션(?)
-    #         "context" : {'default_equipment_type':self.Equipment_type}
-    #     }
-    
-    #중복체크(duplicate check)
-    # @api.onchange('equipment_option')
-    # def option_check(self):
-    #     type_check =self.env["qr.option"].search_count([('equipment_type','=',self.equipment_type),('equipment_option','=',self.equipment_option)])
-    #     if bool(type_check) == True:
-    #          raise ValidationError(_("type must be unique"))
-
 

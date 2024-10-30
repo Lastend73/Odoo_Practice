@@ -1,2 +1,1 @@
-from . import QR
-from . import QrOption
+from . import template_dictionary

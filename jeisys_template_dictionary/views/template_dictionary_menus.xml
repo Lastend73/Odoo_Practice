@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id = "template_dictionary_root" name ="Template dictionary" sequence='1002' web_icon="jeisys_template_dictionary,static/description/icon.png" action ='template_dictionary_action'/>
+</odoo>

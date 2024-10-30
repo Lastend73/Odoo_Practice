@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0-20240905\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-24 04:59+0000\n"
-"PO-Revision-Date: 2024-10-24 04:59+0000\n"
+"POT-Creation-Date: 2024-10-30 03:49+0000\n"
+"PO-Revision-Date: 2024-10-30 03:49+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -190,6 +190,11 @@ msgid "Import proudct by Excel"
 msgstr ""
 
 #. module: jeisys_product_list
+#: model_terms:ir.ui.view,arch_db:jeisys_product_list.product_import_xlsx
+msgid "Import template"
+msgstr "양식(다운로드 후 사용)"
+
+#. module: jeisys_product_list
 #: model:ir.model.fields,field_description:jeisys_product_list.field_create_product_class____last_update
 #: model:ir.model.fields,field_description:jeisys_product_list.field_create_product_generation____last_update
 #: model:ir.model.fields,field_description:jeisys_product_list.field_create_product_line____last_update
@@ -282,7 +287,7 @@ msgstr "제품 용도"
 #. module: jeisys_product_list
 #: model:ir.model.fields.selection,name:jeisys_product_list.selection__product_example__Product_Type__components
 msgid "Product Components"
-msgstr ""
+msgstr "제품 소모품"
 
 #. module: jeisys_product_list
 #: model:ir.model,name:jeisys_product_list.model_product_generation
@@ -300,6 +305,7 @@ msgstr "제품 예시"
 #: model:ir.model.fields,field_description:jeisys_product_list.field_product_generation__Product_Generation
 #: model:ir.model.fields,field_description:jeisys_product_list.field_product_main__Product_Generation
 #: model:ir.model.fields.selection,name:jeisys_product_list.selection__product_example__Product_Type__generation
+#: model_terms:ir.ui.view,arch_db:jeisys_product_list.product_main_view_search
 msgid "Product Generation"
 msgstr "제품 세대"
 
@@ -343,6 +349,7 @@ msgstr "제품 모델"
 
 #. module: jeisys_product_list
 #: model:ir.model.fields,field_description:jeisys_product_list.field_product_main__Product_Nation
+#: model_terms:ir.ui.view,arch_db:jeisys_product_list.product_main_view_search
 msgid "Product Nation"
 msgstr "국가명"
 
@@ -377,20 +384,30 @@ msgid "Public Model"
 msgstr "제품 모델 관리"
 
 #. module: jeisys_product_list
+#: model:ir.model.fields,field_description:jeisys_product_list.field_product_import_wiz__file_template
+msgid "Template File"
+msgstr ""
+
+#. module: jeisys_product_list
 #: model:ir.model.fields,field_description:jeisys_product_list.field_product_example__Product_Type_Title
 msgid "Title"
 msgstr ""
 
 #. module: jeisys_product_list
-#: model_terms:ir.ui.view,arch_db:jeisys_product_list.product_import_xlsx
-msgid "file"
-msgstr "파일명"
+#: model:ir.model.fields,field_description:jeisys_product_list.field_product_import_wiz__check_template_file
+msgid "check model"
+msgstr ""
 
 #. module: jeisys_product_list
 #: model:ir.actions.act_window,name:jeisys_product_list.action_import_product_xlsx
 #: model:ir.model,name:jeisys_product_list.model_product_import_wiz
 msgid "import product xlsx"
 msgstr "엑셀 파일을 업로드 해주세요"
+
+#. module: jeisys_product_list
+#: model_terms:ir.ui.view,arch_db:jeisys_product_list.product_import_xlsx
+msgid "input file"
+msgstr "파일 업로드"
 
 #. module: jeisys_product_list
 #. odoo-python
@@ -400,6 +417,13 @@ msgstr "엑셀 파일을 업로드 해주세요"
 #: code:addons/jeisys_product_list/models/product_model.py:0
 #, python-format
 msgid "type must be unique"
+msgstr ""
+
+#. module: jeisys_product_list
+#. odoo-python
+#: code:addons/jeisys_product_list/wizard/product_import_xlsx.py:0
+#, python-format
+msgid "업로드에 문제가 발생 하였습니다."
 msgstr ""
 
 #. module: jeisys_product_list

@@ -24,9 +24,9 @@
     ],
     'assets': {
         'web.assets_backend': [
-
         ],
     },
+    'depends' : ['jeisys_template_dictionary'],
     'license': 'LGPL-3',
     "installable": True,
     "auto_install": False,

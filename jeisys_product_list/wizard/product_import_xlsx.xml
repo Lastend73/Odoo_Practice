@@ -1,13 +1,17 @@
 <odoo>
 
-<record id="product_import_xlsx" model="ir.ui.view">
+    <record id="product_import_xlsx" model="ir.ui.view">
         <field name="name">import product xlsx</field>
         <field name="model">product.import.wiz</field>
         <field name="arch" type="xml">
             <form string='Import proudct by Excel'>
                 <group>
+                    <field name="check_template_file" readonly='1' invisible='1'/>
+                    <field name="file_template" widget="many2many_binary" readonly='1' string="Import template" attrs="{'invisible': [('check_template_file', '=', False)]}"/>
+                </group>
+                <group>
                     <field name="file_name" invisible='1'/>
-                    <field name="import_file" widget="binary" filename="file_name" string="file"/>
+                    <field name="import_file" widget="binary" filename="file_name" string="input file"/>
                 </group>
                 <footer>
                     <button string="OK" name="product_input_excel" type='object' class="btn-primary"/>
