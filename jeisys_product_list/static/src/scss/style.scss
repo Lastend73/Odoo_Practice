@@ -1,0 +1,23 @@
+.product_example_kanban .o_kanban_group  {
+    --KanbanGroup-width: 1000px !important
+  }
+
+  .product_example_kanban .flex-shrink-0{
+    flex-shrink: 1 !important;
+}
+
+.product_example_kanban .o_column_title {
+    text-align: center;
+}
+.product_example_kanban .oe_kanban_global_click{
+    border-radius: 30px;
+    margin-bottom: 10px;
+    text-align : center;
+}
+.product_example_kanban .o_kanban_header i{
+    display: none !important;
+}
+
+.product_example_kanban .o_kanban_record{
+    pointer-events: none;
+}

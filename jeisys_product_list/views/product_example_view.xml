@@ -29,32 +29,11 @@
         <field name="name">product.example.kanban</field>
         <field name="model">product.example</field>
         <field name="arch" type="xml">
-            <kanban default_group_by="Product_Type" quick_create="false" records_draggable='0' create='false' group_delete='0'>
+            <kanban class="product_example_kanban" default_group_by="Product_Type" quick_create="false" records_draggable='0' create='false' group_delete='0'>
                 <field name="Product_Type"/>
                 <field name="Product_Type_Title"/>
                 <templates>
                     <t t-name="kanban-box">
-                        <style>
-                            .flex-shrink-0{
-                                flex-shrink: 1 !important;
-                            }
-
-                            .o_column_title {
-                                text-align: center;
-                            }
-                            .oe_kanban_global_click{
-                                border-radius: 30px;
-                                margin-bottom: 10px;
-                                text-align : center;
-                            }
-                            .o_kanban_header i{
-                                display: none !important;
-                            }
-
-                            .o_kanban_record{
-                                pointer-events: none;
-                            }
-                        </style>
                         <div class="oe_kanban_global_click">
                             <span t-esc='record.Product_Type_Title.raw_value' style='font-size: 2vh;'/>
                         </div>

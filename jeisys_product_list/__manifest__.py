@@ -24,6 +24,7 @@
     ],
     'assets': {
         'web.assets_backend': [
+            'jeisys_product_list/static/src/scss/style.scss',
         ],
     },
     'depends' : ['jeisys_template_dictionary'],
