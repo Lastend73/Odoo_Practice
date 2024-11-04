@@ -47,7 +47,7 @@ msgstr "취소"
 #. module: jeisys_product_list
 #: model_terms:ir.ui.view,arch_db:jeisys_product_list.product_main_view_search
 msgid "Class"
-msgstr "제품 용도"
+msgstr "제품 계열"
 
 #. module: jeisys_product_list
 #: model:ir.model,name:jeisys_product_list.model_create_product_class
@@ -282,7 +282,7 @@ msgstr "실 사용 명칭"
 #: model:ir.model.fields,field_description:jeisys_product_list.field_product_model__Product_Class
 #: model:ir.model.fields.selection,name:jeisys_product_list.selection__product_example__Product_Type__class
 msgid "Product Class"
-msgstr "제품 용도"
+msgstr "제품 계열"
 
 #. module: jeisys_product_list
 #: model:ir.model.fields.selection,name:jeisys_product_list.selection__product_example__Product_Type__components
@@ -366,7 +366,7 @@ msgstr "제품 예시"
 #. module: jeisys_product_list
 #: model:ir.ui.menu,name:jeisys_product_list.product_list_option_class
 msgid "Public Class"
-msgstr "제품 용도 관리"
+msgstr "제품 계열 관리"
 
 #. module: jeisys_product_list
 #: model:ir.ui.menu,name:jeisys_product_list.product_list_generation
