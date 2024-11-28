@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id = "jeisys_invetory_root" name ="Inventory management" sequence='1003' web_icon="jeisys_inventory_management,static/description/icon.png" action ='inventory_management_action'/>
+</odoo>

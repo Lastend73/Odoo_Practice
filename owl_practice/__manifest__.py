@@ -10,6 +10,7 @@
     "license": "LGPL-3",
     "assets": {
         "web.assets_backend": [
+            'owl_practice/static/src/img/*/*',
             'owl_practice/static/src/components/*/*.js',
             'owl_practice/static/src/components/*/*.xml',
             'owl_practice/static/src/components/*/*.scss',

@@ -10,8 +10,8 @@
                         <field name="title" placeholder="제목을 입력해주세요"/>
                     </h1>
                     <group>
-                        <field name="Action_id" />
-                        <field name="file_template" widget="many2many_binary" string="Files" /> 
+                        <field name="file_template_title" invisible="1"/> 
+                        <field name="file_template" widget="binary" string="Files" filename='file_template_title' /> 
                     </group>
                 </sheet>
             </form>

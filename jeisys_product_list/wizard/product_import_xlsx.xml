@@ -6,8 +6,8 @@
         <field name="arch" type="xml">
             <form string='Import proudct by Excel'>
                 <group>
-                    <field name="check_template_file" readonly='1' invisible='1'/>
-                    <field name="file_template" widget="many2many_binary" readonly='1' string="Import template" attrs="{'invisible': [('check_template_file', '=', False)]}"/>
+                    <span class = "o_form_label">Template</span>
+                    <button string="Download Template" type='object' name="download_template" class="btn-primary"/> 
                 </group>
                 <group>
                     <field name="file_name" invisible='1'/>

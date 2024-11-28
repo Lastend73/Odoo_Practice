@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="inventory_management_view_form" model="ir.ui.view">
+        <field name="name">inventory.management.view.form</field>
+        <field name="model">inventory.management</field>
+        <field name='arch' type='xml'>
+            <form>
+                <sheet>
+                    <group>
+                        <field name='team_name'/>
+                        <field name="equipment_name"></field>
+                        <field name="model_name"></field>
+                        <field name="buy_date"></field>
+                        <field name="control_manager"></field>
+                        <field name='check_date'></field>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="inventory_management_view_tree" model="ir.ui.view">
+        <field name="name">inventory.management.view.tree</field>
+        <field name="model">inventory.management</field>
+        <field name='arch' type='xml'>
+            <tree>
+                <field name='team_name'/>
+                <field name='equipment_name'/>
+                <field name='model_name'/>
+                <field name='buy_date'/>
+                <field name='control_manager'/>
+                <field name='check_date'/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="inventory_management_action" model="ir.actions.act_window">
+        <field name="name">Inventory Management Action</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">inventory.management</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+</odoo>
+

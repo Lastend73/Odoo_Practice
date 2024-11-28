@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id ="jeisys_requset_root" name ="Jeisys_requset" sequence='10' web_icon="Folder_name,static/description/icon.png"/>
+</odoo>

@@ -55,20 +55,23 @@ export class OwlTodoList extends Component {
         await this.getAllTasks()
     }
 
+    // 재거용
     async deleteTask(task) {
         await this.orm.unlink(this.model, [task.id])
         await this.getAllTasks()
     }
 
+    // 검색용
     async searchTasks() {
         const text = this.searchInput.el.value
         console.log(text)
         this.state.taskList = await this.orm.searchRead(this.model, [["name","ilike",text]], ["name", "color", "completed"]) 
     }
 
+    // Task 채크시 다시 밑줄 해제 및 긋기
     async toggleTask(e, task){
         await this.orm.write(this.model, [task.id],{completed:e.target.checked})
-        await this.getAllTasks()
+        await this.getAllTasks() // 정보 가져오기 (데이터 새로고침)
     }
 
     resetForm() {

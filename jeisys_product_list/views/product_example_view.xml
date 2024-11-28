@@ -34,7 +34,7 @@
                 <field name="Product_Type_Title"/>
                 <templates>
                     <t t-name="kanban-box">
-                        <div class="oe_kanban_global_click">
+                        <div class="oe_kanban_global_click product_list">
                             <span t-esc='record.Product_Type_Title.raw_value' style='font-size: 2vh;'/>
                         </div>
                     </t>

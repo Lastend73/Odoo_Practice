@@ -13,6 +13,7 @@
         <field name="model">product.line</field>
         <field name='arch' type='xml'>
             <tree>
+                <field name='Line_Sequence' widget='handle'/>
                 <field name='Product_Class'/>
                 <field name='Product_Line'/>
             </tree>
@@ -28,6 +29,7 @@
                     <group>
                         <field name="Product_Class"/>
                         <field name="Product_Line"/>
+                        <field name='Line_Sequence'/>
                     </group>
                 </sheet>
             </form>
