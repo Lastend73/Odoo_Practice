@@ -13,7 +13,7 @@
         <field name="name">product.main.view.tree</field>
         <field name="model">product.main</field>
         <field name='arch' type='xml'>
-            <tree expand = '1'>
+            <tree expand = '0'>
                 <field name='Product_Class'/>
                 <field name='Product_Line'/>
                 <field name='Product_Model'/>
@@ -34,19 +34,19 @@
                         <h1>제품 입력</h1>
                     </header>
                     <group>
-                        <field name="Product_Class" options="{'no_open':True,'no_create':True}" placeholder="제품 개열을 선택해주세요"/>
+                        <field name="Product_Class" options="{'no_open':True,'no_create':True}" placeholder="제품 개열을 선택해주세요" class="product-required"/>
                         <span></span>
                         <button name="add_product_class" type="object" string='Add Product Class' class="btn-primary" />
 
-                        <field name="Product_Line" options="{'no_open':True,'no_create':True}" placeholder="상위메뉴를 선택해주세요"/>
+                        <field name="Product_Line" options="{'no_open':True,'no_create':True}" placeholder="상위메뉴를 선택해주세요" class="product-required" />
                         <span></span>
                         <button name="add_product_line" type="object" string='Add Product Line' class="btn-primary"/>
 
-                        <field name="Product_Model" options="{'no_open':True,'no_create':True}" placeholder="상위메뉴를 선택해주세요"/>
+                        <field name="Product_Model" options="{'no_open':True,'no_create':True}" placeholder="상위메뉴를 선택해주세요" class="product-required" />
                         <span></span>
                         <button name="add_product_model" type="object" string='Add Product Model' class="btn-primary"/>
 
-                        <field name="Product_Generation" options="{'no_open':True,'no_create':True}" placeholder="상위메뉴를 선택해주세요"/>
+                        <field name="Product_Generation" options="{'no_open':True,'no_create':True}" placeholder="상위메뉴를 선택해주세요" class="product-required" />
                         <span></span>
                         <button name="add_product_generation" type="object" string='Add Product Geneartion' class="btn-primary"/>
 
@@ -71,7 +71,7 @@
             </group>
             <searchpanel>
                     <field name="Product_Class" select="multi" string="Class" icon="fas fa-th-large" enable_counters="1"/>
-                    <field name="Product_Line" select="multi" string="Line" icon="fas fa-th-list" enable_counters="1" />
+                    <field name="Product_Line" select="multi" string="Line" icon="fas fa-th-list" enable_counters="1" domain="[('Product_Class','=','의료미용')]"/>
             </searchpanel>
         </search>
     </field>

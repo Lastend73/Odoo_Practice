@@ -19,6 +19,7 @@
         'views/product_line_view.xml',
         'views/product_class_view.xml',
         'views/product_generation_view.xml',
+        'views/product_import_view.xml',
 
         'views/product_main_menu.xml'
     ],
@@ -27,7 +28,7 @@
             'jeisys_product_list/static/src/scss/style.scss',
         ],
     },
-    'depends' : ['jeisys_template_dictionary'],
+    'depends' : [],
     'license': 'LGPL-3',
     "installable": True,
     "auto_install": False,

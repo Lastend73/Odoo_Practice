@@ -18,61 +18,10 @@ class Create_class(models.TransientModel):
     _name = 'product.import.wiz'
     _description = "import product xlsx"
 
-    file_directfield = fields.Many2one('template.dictionary') 
-    file_template = fields.Binary( string="Template File", related='file_directfield.file_template') 
-    file_title = fields.Char(string='File Title', related ='file_directfield.file_template_title')
-
     import_file = fields.Binary("Import File")
     file_name = fields.Char("File name")
 
-
-    @api.model
-    def default_get(self, fields):
-        res = super(Create_class, self).default_get(fields)
-        try :
-            compare_action_id = self.env['template.dictionary'].sudo().search(["|",('title', '=', "제품 체계도"),('title', 'ilike', "Jeisys Product List")]).id
-            print(compare_action_id)
-            res['file_directfield'] = compare_action_id
-            return res
-        except : 
-            raise ValidationError(_("오류 발생"))
                 
-    # Excel Download
-    def download_template(self):
-        filename = self.file_title
-        decoded_data = base64.b64decode(self.file_template)
-
-        encoded_data = base64.b64encode(decoded_data).decode('utf-8') 
-
-        url = 'http://localhost:8072/tmsdownload/binary'
-        headers = {'Content-Type': 'application/json'}
-        data = {
-            "params": {
-                "filename": filename,
-                "decoded_data": "제품 체계도" 
-            }
-        }
-        data_json = json.dumps(data)
-        print(data_json)
-        try:
-            r = requests.post(url=url, data=data_json, headers=headers)
-            r.raise_for_status()  # HTTP 에러 발생 시 예외 발생
-
-            print("요청 URL:", r.url)
-            print("요청 헤더:", r.request.headers)
-            print("요청 본문:", r.request.body)
-            print("응답 상태 코드:", r.status_code)
-            print("응답 헤더:", r.headers)
-            print("응답 본문:", r.text)
-
-        except requests.exceptions.RequestException as e:
-            print("요청 에러:", e)
-        # return {
-        # 'type': 'ir.actions.act_url',
-        # 'url': f'tmsdownload/binary?file_name={filename}&decoded_data={self.file_template}',  # 이동하려는 URL
-        # 'target': 'new',  # 새 창에서 열기
-        # }   
-            
     #Excel Import
     def product_input_excel(self):
         try :

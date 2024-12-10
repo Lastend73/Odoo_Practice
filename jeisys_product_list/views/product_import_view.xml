@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="product_import_action" model="ir.actions.act_window">
+        <field name="name">Product import</field>        <!-- Window action 이름 -->
+        <field name="type">ir.actions.act_window</field>        <!--동작 방식-->
+        <field name="res_model">product.import</field>        <!--Db 이름 -->
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="product_import_view_form" model="ir.ui.view">
+        <field name="name">product.import.view.form</field>
+        <field name="model">product.import</field>
+        <field name='arch' type='xml'>
+            <form>
+                <sheet>
+                    <group>
+                        <field name="Product_Title"/>
+                        <field name="Product_File_Name" invisible="1"/>
+                        <field name="Product_File" widget="binary" filename="Product_File_Name" nolable="1"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+     <record id="product_import_view_tree" model="ir.ui.view">
+        <field name="name">product.import.view.tree</field>
+        <field name="model">product.import</field>
+        <field name='arch' type='xml'>
+            <tree>
+                <field name="Product_Title"/>
+            </tree>
+        </field>
+    </record>
+</odoo>
+
+    

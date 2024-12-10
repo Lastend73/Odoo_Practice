@@ -227,3 +227,10 @@
  {
     color : darkgray
 }
+
+.product-required::before{
+    content: "*";
+    font-size: 1rem;
+    color: #CD2028;
+    position: absolute;
+}

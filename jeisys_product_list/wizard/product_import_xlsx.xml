@@ -6,10 +6,6 @@
         <field name="arch" type="xml">
             <form string='Import proudct by Excel'>
                 <group>
-                    <span class = "o_form_label">Template</span>
-                    <button string="Download Template" type='object' name="download_template" class="btn-primary"/> 
-                </group>
-                <group>
                     <field name="file_name" invisible='1'/>
                     <field name="import_file" widget="binary" filename="file_name" string="input file"/>
                 </group>

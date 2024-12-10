@@ -4,3 +4,4 @@ from . import product_class
 from . import product_line
 from . import product_model
 from . import product_generation
+from . import product_import
